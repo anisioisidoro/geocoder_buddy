@@ -81,7 +81,6 @@ class Address {
   String countryCode;
 
   factory Address.fromJson(Map<String, dynamic> json) => Address(
-        road: json["road"] == null ? null : json["road"],
         village: json["village"] == null ? null : json["village"],
         county: json["county"] == null ? null : json["county"],
         stateDistrict: json["state_district"] == null ? null : json["state_district"],
@@ -91,6 +90,7 @@ class Address {
         country: json["country"] == null ? null : json["country"],
         countryCode: json["country_code"] == null ? null : json["country_code"],
       );
+
 
   Map<String, dynamic> toJson() => {
         "road": road,
