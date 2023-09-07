@@ -93,7 +93,6 @@ class Address {
 
 
   Map<String, dynamic> toJson() => {
-        "road": road,
         "village": village,
         "county": county,
         "state_district": stateDistrict,
