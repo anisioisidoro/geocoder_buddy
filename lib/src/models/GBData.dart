@@ -70,15 +70,14 @@ class Address {
     required this.countryCode,
   });
 
-  String road;
-  String village;
-  String county;
-  String stateDistrict;
-  String state;
-  String iso31662Lvl4;
-  String postcode;
-  String country;
-  String countryCode;
+  String? village;
+  String? county;
+  String? stateDistrict;
+  String? state;
+  String? iso31662Lvl4;
+  String? postcode;
+  String? country;
+  String? countryCode;
 
   factory Address.fromJson(Map<String, dynamic> json) => Address(
         village: json["village"] == null ? null : json["village"],
