@@ -59,7 +59,6 @@ class GBData {
 
 class Address {
   Address({
-    required this.road,
     required this.village,
     required this.county,
     required this.stateDistrict,
